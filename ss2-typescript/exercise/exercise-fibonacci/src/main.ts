@@ -3,6 +3,11 @@ function sum(number:number): number {
     let number2 = 1;
     let temp;
     let result = number1+number2;
+    if(number<=0){
+        result = 0;
+    } else if ((number == 1 || number == 2)){
+        result = 1;
+    }
 
     let count = 2;
     while (count<number){
@@ -14,4 +19,4 @@ function sum(number:number): number {
     }
     return result;
 }
-console.log(sum(10));
+console.log(sum(8));
